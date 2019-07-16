@@ -24,7 +24,7 @@ class CreateStaffRequest extends FormRequest
     public function rules()
     {
         return [
-            'group_employees' => 'required',
+//            'group_employees' => 'required',
             'name' => 'required|min:3|max:30',
             'gender' => 'required',
             'phone_number' => 'required',
@@ -41,7 +41,7 @@ class CreateStaffRequest extends FormRequest
             'name.required' => 'Tên không được để trống!',
             'name.min' => 'Name size must be between 3 and 30!',
             'name.max' => 'Name size must be between 3 and 30!',
-            'group_employees.required' => 'Nhóm nhân viên không được để trống!',
+//            'group_employees.required' => 'Nhóm nhân viên không được để trống!',
             'gender.required' => 'Chưa thêm giới tính!',
             'phone_number.required'=> 'Số điện thoại không được để trống!',
             'birthday.required' =>' Ngày sinh không được để trống!',

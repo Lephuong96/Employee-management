@@ -40,7 +40,7 @@ class StaffController extends Controller
     public function store(CreateStaffRequest $request)
     {
         $staff = new Staff();
-        $staff->id = $request->input('id');
+        $staff->employee_id = $request->input('employee_id');
         $staff->group_employees = $request->input('group_employees');
         $staff->name = $request->input('name');
         $staff->gender = $request->input('gender');
@@ -88,7 +88,7 @@ class StaffController extends Controller
     public function update(UpdateStaffRequest $request, $id)
     {
         $staff = Staff::findOrFail($id);
-        $staff->id = $request->input('id');
+        $staff->employee_id = $request->input('employee_id');
         $staff->group_employees = $request->input('group_employees');
 
         $staff->name = $request->input('name');

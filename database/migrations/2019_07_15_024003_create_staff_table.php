@@ -13,15 +13,16 @@ class CreateStaffTable extends Migration
      */
     public function up()
     {
-        Schema::create('staffs', function (Blueprint $table) {
+        Schema::create('staff', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->char('employee_id');
             $table->string('group_employees');
-            $table->string('name');
-            $table->string('gender');
-            $table->bigInteger('phone_number');
+            $table->string('name',50);
+            $table->string('gender')->nullable();
+            $table->char('phone_number')->nullable();
             $table->date('birthday')->nullable();
             $table->bigInteger('card_number');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->string('address');
             $table->timestamps();
         });

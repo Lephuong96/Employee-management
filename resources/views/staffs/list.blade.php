@@ -37,7 +37,7 @@
         <div class="col-md-12">
             <table class="table table-striped">
                 <thead>
-                <tr>
+                <tr><th scope="col">Số thứ tự</th>
                     <th scope="col">Mã nhân viên</th>
                     <th scope="col">Nhóm nhân viên</th>
                     <th scope="col">Họ tên</th>
@@ -51,6 +51,7 @@
                 @foreach($staffs as $key => $staff)
                     <tr>
                         <th scope="row">{{ ++$key }}</th>
+                        <td>{{ $staff->employee_id }}</td>
                         <td>{{ $staff->group_employees }}</td>
                         <td>{{ $staff->name }}</td>
                         <td>{{ $staff->gender }}</td>

@@ -11,19 +11,19 @@
                 <div class="row">
                     <div class="col">
                         <label>Mã nhân viên:</label>
-                        <input type="text" class="form-control" name="id" required>
+                        <input type="text" class="form-control" name="employee_id" required>
                     </div>
                     <div class="col">
                         <label>Số điện thoại:</label>
-                        <input type="integer" class="form-control" name="phone_number" required>
+                        <input type="tel" class="form-control" name="phone_number" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label>Nhóm nhân viên:</label>
                         <select class="form-group" name="group_employees">
-                            <option value="">--Chọn chức vụ--</option>
-                            <option value="Quản lí điều hành">Quản lí điều hành</option>
+{{--                            <option value="">--Chọn chức vụ--</option>--}}
+                            <option value="Quản trị hệ thống">Quản trị hệ thống</option>
                             <option value="Thư kí">Thư kí</option>
                             <option value="Kế toán">Kế toán</option>
                             <option value="Nhân viên lễ tân">Nhân viên lễ tân</option>

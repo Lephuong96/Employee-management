@@ -13,18 +13,18 @@
                 <div class="row">
                     <div class="col">
                         <label>Mã nhân viên:</label>
-                        <input type="text" class="form-control" name="id" required value="{{$staff->id}}">
+                        <input type="text" class="form-control" name="employee_id" required value="{{$staff->id}}">
                     </div>
                     <div class="col">
                         <label>Số điện thoại:</label>
-                        <input type="integer" class="form-control" name="phone_number" required value="{{$staff->phone_number}}">
+                        <input type="tel" class="form-control" name="phone_number" required value="{{$staff->phone_number}}">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label>Nhóm nhân viên:</label>
                         <select class="form-group" name="group_employees">
-                            <option value="">--Chọn chức vụ--</option>
+{{--                            <option value="">--Chọn chức vụ--</option>--}}
                             <option value="Quản lí điều hành">Quản lí điều hành</option>
                             <option value="Thư kí">Thư kí</option>
                             <option value="Kế toán">Kế toán</option>
