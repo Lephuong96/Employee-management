@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col">
                         <label>Nhóm nhân viên:</label>
-                        <select class="form-group" name="group_employees" required>
+                        <select class="custom-select my-1 mr-sm-2" name="group_employees" required>
                             <option value="Chưa phân nhóm">--Chọn chức vụ--</option>
                             <option value="Quản trị hệ thống">Quản trị hệ thống</option>
                             <option value="Thư kí">Thư kí</option>
