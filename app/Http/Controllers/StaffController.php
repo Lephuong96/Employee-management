@@ -102,7 +102,7 @@ class StaffController extends Controller
 
 
         Session::flash('success', 'Cập nhật thành công');
-        return redirect()->route('tasks.index');
+        return redirect()->route('staffs.index');
     }
 
     /**

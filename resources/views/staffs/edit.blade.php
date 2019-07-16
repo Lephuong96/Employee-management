@@ -64,7 +64,7 @@
                     <input name="gender" type="radio" value="Nam"/>Nam
                     <input name="gender" type="radio" value="Nữ"/>Nữ
                 </div>
-                <button type="submit" class="btn btn-primary">Cập nhật</button>
+                <button type="submit" class="btn btn-primary" onclick="return confirm('Bạn chắc chắn muốn thay đổi?') ">Cập nhật</button>
                 <a href="{{route('staffs.index')}}" class="btn btn-dark">Hủy</a>
             </form>
         </div>
