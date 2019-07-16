@@ -5,7 +5,6 @@
         <h2>Thêm mới nhân viên</h2>
     </div>
     <div class="row">
-
         <div class="col-md-12">
             <form method="post" action="{{ route('staffs.store') }}">
                 @csrf
@@ -22,7 +21,15 @@
                 <div class="row">
                     <div class="col">
                         <label>Nhóm nhân viên:</label>
-                        <input type="text" class="form-control" name="group_employees" required>
+                        <select class="form-group" name="group_employees">
+                            <option value="">--Chọn chức vụ--</option>
+                            <option value="Quản lí điều hành">Quản lí điều hành</option>
+                            <option value="Thư kí">Thư kí</option>
+                            <option value="Kế toán">Kế toán</option>
+                            <option value="Nhân viên lễ tân">Nhân viên lễ tân</option>
+                            <option value="Thực tập sinh">Thực tập sinh</option>
+                            <option value="Chuyên viên">Chuyên viên</option>
+                        </select>
                     </div>
                     <div class="col">
                         <label>Số CMND:</label>
@@ -55,7 +62,7 @@
                     <input name="gender" type="radio" value="Nam"/>Nam
                     <input name="gender" type="radio" value="Nữ"/>Nữ
                 </div>
-                <button type="submit" class="btn btn-primary">Thêm mới</button>
+                <button type="submit" class="btn btn-primary ">Thêm mới</button>
                 <a href="{{route('staffs.index')}}" class="btn btn-dark">Hủy</a>
             </form>
         </div>

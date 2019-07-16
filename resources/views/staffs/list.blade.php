@@ -1,8 +1,8 @@
 @extends('home')
 @section('title', 'Danh sách nhân viên')
 @section('content')
-    <div class="row">
-        <div class="col-md-12">
+    <div class="row text-md-center" >
+        <div class="col-md-12 text-primary">
             <h2>Danh sách nhân viên</h2>
         </div>
         <div class="col-12">
@@ -63,7 +63,7 @@
                 @endforeach
                 </tbody>
             </table>
-            <a href="{{ route('staffs.create') }}" class="btn btn-primary">Thêm mới</a>
+            <a href="{{ route('staffs.create') }}" class="btn btn-primary ">Thêm mới</a>
         </div>
     </div>
 

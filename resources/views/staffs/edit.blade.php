@@ -23,7 +23,15 @@
                 <div class="row">
                     <div class="col">
                         <label>Nhóm nhân viên:</label>
-                        <input type="text" class="form-control" name="group_employees" required value="{{$staff->group_employees}}">
+                        <select class="form-group" name="group_employees">
+                            <option value="">--Chọn chức vụ--</option>
+                            <option value="Quản lí điều hành">Quản lí điều hành</option>
+                            <option value="Thư kí">Thư kí</option>
+                            <option value="Kế toán">Kế toán</option>
+                            <option value="Nhân viên lễ tân">Nhân viên lễ tân</option>
+                            <option value="Thực tập sinh">Thực tập sinh</option>
+                            <option value="Chuyên viên">Chuyên viên</option>
+                        </select>
                     </div>
                     <div class="col">
                         <label>Số CMND:</label>
