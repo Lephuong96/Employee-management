@@ -21,8 +21,8 @@
                 <div class="row">
                     <div class="col">
                         <label>Nhóm nhân viên:</label>
-                        <select class="form-group" name="group_employees">
-{{--                            <option value="">--Chọn chức vụ--</option>--}}
+                        <select class="form-group" name="group_employees" required>
+                            <option value="">--Chọn chức vụ--</option>
                             <option value="Quản trị hệ thống">Quản trị hệ thống</option>
                             <option value="Thư kí">Thư kí</option>
                             <option value="Kế toán">Kế toán</option>
